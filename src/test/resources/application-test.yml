@@ -1,6 +1,6 @@
 datasources:
   default:
-    url: jdbc:h2:mem:testDB;MODE=POSTGRESQL;DATABASE_TO_LOWER=TRUE
+    url: jdbc:h2:mem:testDB;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     driverClassName: org.h2.Driver
     username: sa
     dialect: H2
@@ -14,7 +14,7 @@ logger:
 #  name: carrosGrpc
 #datasources:
 #  default:
-#    url: jdbc:postgresql://localhost:5432/postgres
+#    url: jdbc:postgresql://localhost:5432/cdc?Schema=carros_test
 #    driverClassName: org.postgresql.Driver
 #    username: postgres
 #    password: postgres

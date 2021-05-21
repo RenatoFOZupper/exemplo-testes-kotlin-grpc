@@ -5,7 +5,6 @@ import br.com.zup.edu.CarroResponse
 import br.com.zup.edu.CarrosGrpcServiceGrpc
 import io.grpc.Status
 import io.grpc.stub.StreamObserver
-import io.micronaut.validation.validator.constraints.ConstraintValidator
 import javax.inject.Inject
 import javax.inject.Singleton
 import javax.validation.ConstraintViolationException
